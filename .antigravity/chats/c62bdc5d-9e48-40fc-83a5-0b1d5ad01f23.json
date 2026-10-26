@@ -52,6 +52,18 @@
       "created_at": "2026-10-26T15:09:41.325Z",
       "sender": "macOS",
       "is_cancelled": false
+    },
+    {
+      "id": "d33439ce-e00e-489a-8108-2bfb1da8b404",
+      "role": "user",
+      "content": "Ya conecté el repositorio jerepe244-coder/my-project-2 al proyecto existente la-fresque-preview en Vercel.\n\nAhora continuá vos con el trabajo:\n\n1. Verificá que los cambios del proyecto se sincronicen con el repositorio conectado.\n2. Incorporá al repositorio los archivos reales de la demo de Hotel La Fresque. No inventes una versión nueva ni reemplaces el diseño original.\n3. Confirmá que los cambios lleguen a GitHub y que Vercel inicie el despliegue automático.\n4. Revisá los registros del despliegue y corregí cualquier error.\n5. Verificá que la web publicada abra correctamente en español e inglés.\n\nNo me pidas que haga manualmente pasos que podés ejecutar desde tu entorno. Si no podés acceder a los archivos originales de la demo o a alguna herramienta necesaria, identificá exactamente cuál es el bloqueo y resolvelo por la vía disponible.\n\nNo modifiques lafresquehotel.com ni ningún sitio de producción del hotel. Trabajá exclusivamente en la-fresque-preview.",
+      "status": "pending",
+      "model": "gemini-3.8-flash-medium",
+      "client_type": "gemini-bridge",
+      "parent_message_id": null,
+      "created_at": "2026-10-26T15:14:28.605Z",
+      "sender": "ios",
+      "is_cancelled": false
     }
   ]
 }
