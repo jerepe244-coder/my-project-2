@@ -112,11 +112,11 @@ function setLanguage(lang) {
   const metaDesc = document.querySelector("meta[name=\"description\"]");
   if (metaDesc) {
     if (lang === "pt") {
-      metaDesc.setAttribute("content", "Hotel boutique histórico na Avenida de Mayo 984, Monserrat, Buenos Aires. Edifício tombado de 1894 restaurado com abóbadas de tijolos, pisos de madeira e comodidades contemporâneas.");
+      metaDesc.setAttribute("content", "Hotel histórico na Avenida de Mayo 984, Monserrat, Buenos Aires. Edifício tombado de 1894 restaurado com abóbadas de tijolos, pisos de madeira, museu próprio e comodidades contemporâneas.");
     } else if (lang === "en") {
-      metaDesc.setAttribute("content", "Historic boutique hotel on Avenida de Mayo 984, Monserrat, Buenos Aires. Late 19th-century landmark restored with high vaulted ceilings, timber floors, and contemporary comforts.");
+      metaDesc.setAttribute("content", "Historic hotel on Avenida de Mayo 984, Monserrat, Buenos Aires. Late 19th-century landmark restored with high vaulted ceilings, timber floors, on-site museum, and contemporary comforts.");
     } else {
-      metaDesc.setAttribute("content", "Hotel boutique de carácter histórico en Avenida de Mayo 984, Monserrat, Buenos Aires. Edificio de finales del siglo XIX reciclado a nuevo con techos altos, pisos de madera y comodidades contemporáneas.");
+      metaDesc.setAttribute("content", "Hotel de carácter histórico en Avenida de Mayo 984, Monserrat, Buenos Aires. Edificio de finales del siglo XIX reciclado a nuevo con techos altos, pisos de madera, museo propio y comodidades contemporáneas.");
     }
   }
 
@@ -585,7 +585,7 @@ function setupGallery() {
     if (captionKey && t[captionKey]) {
       lightboxCaption.textContent = t[captionKey];
     } else {
-      const captionTitleEl = item.querySelector(".gallery-caption-title");
+      const captionTitleEl = item.querySelector(".gallery-caption-title, .museum-caption-title");
       lightboxCaption.textContent = captionTitleEl ? captionTitleEl.textContent : imgEl.alt;
     }
 
