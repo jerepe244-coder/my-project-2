@@ -268,6 +268,18 @@
       "created_at": "2026-10-26T21:38:56.997Z",
       "sender": "macOS",
       "is_cancelled": false
+    },
+    {
+      "id": "f520d425-8d18-43be-92c9-91c450d0eb2e",
+      "role": "user",
+      "content": "Revisá la web actual de Hotel La Fresque y aplicá estos cambios sin reconstruirla desde cero:\n\n1. Diseño: eliminá emojis y adornos innecesarios. Mejorá la jerarquía visual, alineación, espaciado y tipografía para lograr una web profesional, ordenada y coherente en desktop y mobile.\n2. Fotografías: mejorá la selección, calidad visual, recortes y distribución de las fotos reales del hotel, sin utilizar imágenes engañosas.\n3. Idiomas: incorporá portugués brasileño (PT-BR) junto con español e inglés. Traducí todo el contenido, incluidos menús, botones, formularios, mensajes y textos de accesibilidad. Verificá el selector en los tres idiomas.\n4. Identidad visual: conservá el estilo histórico y elegante del hotel, con tonos marfil, bordó, dorado antiguo y madera oscura.\n\nMantené todas las funcionalidades existentes, el rendimiento, la accesibilidad y el diseño responsive. No inventes información ni elimines funciones que ya funcionan.\n\nAl terminar, verificá que todo funcione correctamente y publicá automáticamente los cambios en Vercel para que queden visibles en la web.",
+      "status": "pending",
+      "model": "gemini-3.8-flash-medium",
+      "client_type": "gemini-bridge",
+      "parent_message_id": null,
+      "created_at": "2026-10-26T22:40:42.007Z",
+      "sender": "ios",
+      "is_cancelled": false
     }
   ]
 }
