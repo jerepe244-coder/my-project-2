@@ -226,22 +226,25 @@ ul, ol {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 16px;
-  margin: 20px auto;
+  gap: 12px;
+  margin: 18px auto 0;
 }
 
-.ornament-divider::before,
-.ornament-divider::after {
-  content: "";
+.ornament-divider .divider-line {
+  display: block;
+  width: 48px;
   height: 1px;
-  width: 60px;
   background: var(--color-gold);
-  opacity: 0.6;
+  opacity: 0.55;
 }
 
-.ornament-divider span {
-  color: var(--color-gold);
-  font-size: 1.1rem;
+.ornament-divider .divider-diamond {
+  display: block;
+  width: 6px;
+  height: 6px;
+  background: var(--color-gold);
+  transform: rotate(45deg);
+  opacity: 0.85;
 }
 
 /* --- Buttons & CTAs --- */
@@ -357,8 +360,10 @@ ul, ol {
 }
 
 .top-bar-benefit::before {
-  content: "★";
+  content: "•";
   color: var(--color-gold);
+  font-size: 1.2rem;
+  line-height: 1;
 }
 
 .top-bar-contacts {
