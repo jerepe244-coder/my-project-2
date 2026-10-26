@@ -510,14 +510,16 @@ function setupRoomThumbnails() {
         e.preventDefault();
         const gallerySection = document.getElementById("gallery");
         if (gallerySection) {
+          const archiveGrid = document.getElementById("galleryArchiveGrid");
+          const toggleBtn = document.getElementById("toggleFullGallery");
+          if (archiveGrid && archiveGrid.hasAttribute("hidden") && toggleBtn) {
+            toggleBtn.click();
+          }
+
           const header = document.querySelector(".site-header");
           const offset = header ? header.offsetHeight : 74;
           const pos = gallerySection.getBoundingClientRect().top + window.pageYOffset - offset;
           window.scrollTo({ top: pos, behavior: "smooth" });
-
-          // Also activate the rooms filter tab in the gallery
-          const roomsFilterBtn = document.querySelector(".gallery-filter-btn[data-filter=\"rooms\"]");
-          if (roomsFilterBtn) roomsFilterBtn.click();
         }
       });
     }
@@ -526,8 +528,10 @@ function setupRoomThumbnails() {
 
 // --- 8. PHOTO GALLERY & LIGHTBOX ---
 function setupGallery() {
-  const filterBtns = document.querySelectorAll(".gallery-filter-btn");
   const items = document.querySelectorAll(".gallery-item");
+  const archiveGrid = document.getElementById("galleryArchiveGrid");
+  const toggleBtn = document.getElementById("toggleFullGallery");
+  const toggleBtnText = document.getElementById("toggleFullGalleryText");
   const lightbox = document.getElementById("lightboxModal");
   const lightboxImg = document.getElementById("lightboxImg");
   const lightboxCaption = document.getElementById("lightboxCaption");
@@ -536,28 +540,32 @@ function setupGallery() {
   const nextBtn = document.getElementById("lightboxNext");
 
   let currentGalleryIndex = 0;
-  let visibleItems = Array.from(items);
+  const visibleItems = Array.from(items);
 
-  // Gallery Filtering
-  filterBtns.forEach((btn) => {
-    btn.addEventListener("click", () => {
-      filterBtns.forEach((b) => b.classList.remove("active"));
-      btn.classList.add("active");
+  // Discreet Toggle for Full Gallery Archive
+  if (toggleBtn && archiveGrid) {
+    toggleBtn.addEventListener("click", () => {
+      const isHidden = archiveGrid.hasAttribute("hidden");
+      const lang = window.currentAppLang || "es";
+      const t = translations[lang] || translations.es;
 
-      const filter = btn.getAttribute("data-filter");
-
-      items.forEach((item) => {
-        const itemCat = item.getAttribute("data-category") || "";
-        if (filter === "all" || itemCat.includes(filter)) {
-          item.style.display = "block";
-        } else {
-          item.style.display = "none";
+      if (isHidden) {
+        archiveGrid.removeAttribute("hidden");
+        toggleBtn.setAttribute("aria-expanded", "true");
+        if (toggleBtnText) {
+          toggleBtnText.setAttribute("data-i18n", "gallery_collapse_all");
+          toggleBtnText.textContent = t.gallery_collapse_all;
         }
-      });
-
-      visibleItems = Array.from(items).filter((i) => i.style.display !== "none");
+      } else {
+        archiveGrid.setAttribute("hidden", "");
+        toggleBtn.setAttribute("aria-expanded", "false");
+        if (toggleBtnText) {
+          toggleBtnText.setAttribute("data-i18n", "gallery_explore_all");
+          toggleBtnText.textContent = t.gallery_explore_all;
+        }
+      }
     });
-  });
+  }
 
   // Open Lightbox
   function showLightbox(index) {
