@@ -976,15 +976,49 @@ ul, ol {
   background: var(--bg-dark);
 }
 
-.room-image-holder img {
+.room-image-holder img,
+.room-main-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.6s ease;
+  transition: opacity 0.2s ease, transform 0.6s ease;
 }
 
-.room-card:hover .room-image-holder img {
-  transform: scale(1.05);
+.room-card:hover .room-image-holder img,
+.room-card:hover .room-main-img {
+  transform: scale(1.04);
+}
+
+.room-thumbs-strip {
+  display: flex;
+  gap: 8px;
+  padding: 8px 16px;
+  background: #F1E9DE;
+  border-bottom: 1px solid var(--border-subtle);
+  overflow-x: auto;
+}
+
+.room-thumb {
+  width: 52px;
+  height: 36px;
+  border-radius: 4px;
+  object-fit: cover;
+  cursor: pointer;
+  border: 2px solid transparent;
+  opacity: 0.72;
+  transition: all var(--transition-fast);
+  flex-shrink: 0;
+}
+
+.room-thumb:hover {
+  opacity: 1;
+  border-color: var(--color-gold);
+}
+
+.room-thumb.active {
+  opacity: 1;
+  border-color: var(--color-burgundy);
+  box-shadow: 0 0 0 1px var(--color-burgundy);
 }
 
 .room-badge-tag {
@@ -1004,7 +1038,7 @@ ul, ol {
 }
 
 .room-body {
-  padding: 28px 24px;
+  padding: 24px 22px;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
@@ -1030,11 +1064,17 @@ ul, ol {
   font-weight: 600;
   color: var(--color-burgundy);
   background: var(--color-burgundy-soft);
-  padding: 4px 10px;
+  padding: 5px 11px;
   border-radius: var(--radius-sm);
   display: inline-flex;
   align-items: center;
-  gap: 5px;
+  gap: 6px;
+  border: 1px solid rgba(92, 19, 36, 0.08);
+}
+
+.spec-chip svg {
+  color: var(--color-burgundy);
+  flex-shrink: 0;
 }
 
 .room-description {
@@ -1070,9 +1110,13 @@ ul, ol {
 }
 
 .room-actions {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-wrap: wrap;
   gap: 10px;
+}
+
+.room-actions .btn {
+  flex: 1 1 180px;
 }
 
 /* --- Amenities & Services Section --- */
@@ -1228,8 +1272,23 @@ ul, ol {
 }
 
 .gallery-caption-zoom {
-  color: var(--color-gold);
-  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.22);
+  backdrop-filter: blur(4px);
+  color: #FFFFFF;
+  transition: all var(--transition-fast);
+  flex-shrink: 0;
+}
+
+.gallery-item:hover .gallery-caption-zoom {
+  background: var(--color-gold);
+  color: var(--bg-dark);
+  transform: scale(1.1);
 }
 
 /* Lightbox Modal */
@@ -1629,6 +1688,52 @@ ul, ol {
   border-color: var(--color-burgundy);
 }
 
+.contact-facade-card {
+  margin-top: 18px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  position: relative;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-dark);
+}
+
+.contact-facade-card img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.contact-facade-card:hover img {
+  transform: scale(1.03);
+}
+
+.contact-facade-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(31, 23, 21, 0.1) 0%, rgba(31, 23, 21, 0.85) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 14px 16px;
+  color: var(--color-text-inverse);
+}
+
+.contact-facade-title {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-text-inverse);
+}
+
+.contact-facade-subtitle {
+  font-size: 0.8rem;
+  color: var(--color-gold-hover);
+  letter-spacing: 0.04em;
+}
+
 .contact-card-icon {
   width: 44px;
   height: 44px;
@@ -1741,8 +1846,13 @@ ul, ol {
 
 .footer-contact-row {
   display: flex;
-  align-items: flex-start;
-  gap: 10px;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer-contact-row svg {
+  color: var(--color-gold);
+  flex-shrink: 0;
 }
 
 .footer-social-row {
@@ -1820,6 +1930,25 @@ ul, ol {
 
 .toast-error {
   border-left-color: var(--color-error);
+}
+
+.toast-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.toast-success .toast-icon {
+  color: var(--color-success);
+}
+
+.toast-error .toast-icon {
+  color: var(--color-error);
+}
+
+.toast-text {
+  line-height: 1.4;
 }
 
 /* ==========================================================================
