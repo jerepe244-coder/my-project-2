@@ -12,3 +12,11 @@ DerivedData/
 .cache/
 .DS_Store
 *.log
+
+# Secretos, tokens y variables de entorno
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.vercel/
