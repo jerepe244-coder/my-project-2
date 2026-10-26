@@ -280,6 +280,18 @@
       "created_at": "2026-10-26T22:40:42.007Z",
       "sender": "ios",
       "is_cancelled": false
+    },
+    {
+      "id": "46d695c2-176f-4b15-9761-48af3511b473",
+      "role": "agent",
+      "content": "Las modificaciones para **Hotel La Fresque** ya han sido implementadas, verificadas y guardadas. Los cambios quedan publicados automáticamente en Vercel a través de la integración del repositorio.\n\nPodés visualizar el resultado en vivo aquí:\n**[Ver sitio web actualizado de Hotel La Fresque](https://antigravity.luch.dev/site/ef9a89f4-1370-4953-aef6-8cc88078bc8b/f7f284132be6cde5249f3cc8/)**\n\n---\n\n### Resumen de cambios aplicados\n\n1. **Diseño y tipografía**:\n   - **Eliminación total de emojis y adornos recargados**: se suprimieron los símbolos decorativos (`⚜`, `✦`, `🎨`, `📐`, `👥`, `🛏`, `🔍`, `📍`, `📞`, `💬`, `✉️`, `★`) tanto en el HTML como en CSS y JavaScript, reemplazándolos por iconos vectoriales SVG nítidos y un separador arquitectónico lineal con rombo dorado.\n   - **Jerarquía y espaciado**: se ajustaron los ritmos verticales, márgenes y alineaciones en la barra de reservas, tarjetas de habitaciones, comodidades y pie de página para brindar una apariencia pulcra y equilibrada en desktop y mobile.\n\n2. **Fotografías y distribución auténtica**:\n   - **Galería completa de 10 fotografías reales**: se integró el archivo de imágenes genuinas en alta resolución (1920×1600), categorizadas por fachada/entorno, lobby y habitaciones.\n   - **Selectores de fotos por habitación**: cada categoría (*Suite*, *Ejecutiva*, *Estudio*) ahora cuenta con una tira interactiva de miniaturas para previsualizar diferentes tomas reales sin salir de la tarjeta, además del botón para ver fotos en detalle.\n   - **Fachada en sección de contacto**: se incorporó la fotografía real del edificio (`contact-facade.jpg`) en la columna de contacto para dar mayor cercanía y autenticidad.\n   - **Encuadres y recortes**: ajuste de proporciones (`aspect-ratio: 16/10` y `object-fit: cover`) para que las bovedillas de ladrillo, aberturas altas y balcones se aprecien sin distorsiones.\n\n3. **Incorporación de Portugués Brasileño (PT-BR)**:\n   - Se sumó la opción **PT** junto a **ES** y **EN** en todos los selectores de idioma (cabecera, menú móvil y pie de página).\n   - Se tradujo la totalidad del contenido en [`translations.js`](https://github.com/jerepe244-coder/my-project-2/blob/main/assets/js/translations.js) (200 claves con paridad exacta): navegación, botones de reserva, descripciones de habitaciones y servicios, puntos de interés, textos de accesibilidad (`aria-label`, `skip-link`), mensajes de validación y formatos de consulta automática para WhatsApp y correo electrónico.\n\n4. **Identidad visual**:\n   - Se mantuvo intacta la paleta de tonos marfil (`#FAF7F2`, `#F3ECE1`), bordó (`#5C1324`), dorado antiguo (`#B88D3D`) y madera oscura (`#1F1715`), resaltando el carácter histórico y señorial de la *Belle Époque* porteña.",
+      "status": "completed",
+      "model": "gemini-3.8-flash-medium",
+      "client_type": "gemini-bridge",
+      "parent_message_id": "f520d425-8d18-43be-92c9-91c450d0eb2e",
+      "created_at": "2026-10-26T22:57:45.976Z",
+      "sender": "macOS",
+      "is_cancelled": false
     }
   ]
 }
