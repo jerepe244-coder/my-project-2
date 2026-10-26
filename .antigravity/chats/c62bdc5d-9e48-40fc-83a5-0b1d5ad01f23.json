@@ -1,0 +1,21 @@
+{
+  "sessionId": "c62bdc5d-9e48-40fc-83a5-0b1d5ad01f23",
+  "name": "Necesito que publiques la demo de",
+  "createdAt": "2026-10-26T14:52:27.044Z",
+  "filename": "c62bdc5d-9e48-40fc-83a5-0b1d5ad01f23.json",
+  "geminiStarted": false,
+  "messages": [
+    {
+      "id": "31e8eea5-1457-4279-a4c3-d68b52232d0a",
+      "role": "user",
+      "content": "Necesito que publiques la demo de Hotel La Fresque en Vercel.\n\nEl proyecto de Vercel la-fresque-preview ya existe y está configurado para una publicación estática. Los archivos de la demo están en el ZIP la-fresque-demo.zip.\n\nTu tarea es encargarte de todo el proceso:\n\n1. Localizar y extraer el ZIP del proyecto.\n2. Revisar la estructura y conservar los archivos necesarios para que la web funcione visualmente en español e inglés.\n3. Si hace falta, crear un repositorio independiente en GitHub y conectarlo con el proyecto de Vercel existente.\n4. Publicar la demo y verificar que la URL pública funcione.\n5. Corregir los errores de compilación o rutas que impidan verla.\n\nRestricciones importantes:\n\n* No modificar ni desplegar sobre lafresquehotel.com.\n* No modificar ningún proyecto de producción del hotel.\n* Trabajar exclusivamente con el proyecto de vista previa la-fresque-preview.\n* No inventar URLs ni afirmar que está publicada sin comprobarlo.\n* No exponer claves, tokens ni variables secretas.\n* El backend de reservas está excluido de la publicación estática: no simules que funciona si no está integrado.\n\nSi necesitás GitHub, utilizá la integración disponible o pedime únicamente la autorización indispensable. No te limites a darme instrucciones: intentá completar la publicación y verificá el resultado final.",
+      "status": "pending",
+      "model": "gemini-3.8-flash-high",
+      "client_type": "gemini-bridge",
+      "parent_message_id": null,
+      "created_at": "2026-10-26T14:52:28.468Z",
+      "sender": "ios",
+      "is_cancelled": false
+    }
+  ]
+}
