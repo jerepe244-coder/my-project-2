@@ -1785,6 +1785,11 @@ ul, ol {
   flex-direction: column;
 }
 
+.contact-detail-block {
+  display: flex;
+  flex-direction: column;
+}
+
 .contact-detail-primary {
   padding-bottom: 28px;
   border-bottom: 1px solid var(--color-text-main);
