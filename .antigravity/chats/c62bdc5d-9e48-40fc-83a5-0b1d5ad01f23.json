@@ -160,6 +160,18 @@
       "created_at": "2026-10-26T18:51:14.339Z",
       "sender": "macOS",
       "is_cancelled": false
+    },
+    {
+      "id": "a4f44f6e-cfbe-45be-92a5-fc8c2d096531",
+      "role": "user",
+      "content": "Desplegá la web completa de Hotel La Fresque en Vercel usando el proyecto actual de Antigravity. Verificá que el build termine correctamente, publicá en producción y comprobá que la URL pública cargue el sitio real, con imágenes, navegación y versiones en español e inglés funcionando.\n\nSi el proyecto de Vercel no existe o no corresponde a esta web, creá uno nuevo llamado hotel-la-fresque. No modifiques otros proyectos.\n\nNo te limites a generar el código ni a mostrar una vista previa local. Completá el despliegue, verificá el resultado y pasame el enlace público definitivo. Si falla, diagnosticá el error y resolvelo con las herramientas disponibles antes de terminar.",
+      "status": "pending",
+      "model": "gemini-3.8-flash-medium",
+      "client_type": "gemini-bridge",
+      "parent_message_id": null,
+      "created_at": "2026-10-26T18:59:48.865Z",
+      "sender": "ios",
+      "is_cancelled": false
     }
   ]
 }
