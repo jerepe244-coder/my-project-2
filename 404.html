@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página no encontrada — Hotel La Fresque</title>
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <style>
+    .error-wrapper {
+      min-height: 80vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    .error-code {
+      font-family: var(--font-serif);
+      font-size: clamp(5rem, 12vw, 8rem);
+      color: var(--color-gold);
+      line-height: 1;
+      margin-bottom: 16px;
+    }
+    .error-title {
+      font-family: var(--font-serif);
+      font-size: 2rem;
+      color: var(--color-burgundy);
+      margin-bottom: 16px;
+    }
+    .error-text {
+      max-width: 500px;
+      margin: 0 auto 32px auto;
+      color: var(--color-text-muted);
+    }
+  </style>
+</head>
+<body>
+  <div class="container error-wrapper">
+    <a href="/" style="margin-bottom: 24px;">
+      <img src="assets/images/logo@2x.png" alt="Hotel La Fresque" width="180">
+    </a>
+    <div class="error-code">404</div>
+    <h1 class="error-title">Página no encontrada</h1>
+    <p class="error-text">
+      La página que busca no existe o ha sido trasladada. Le invitamos a regresar al sitio principal de Hotel La Fresque.
+    </p>
+    <a href="/" class="btn btn-primary btn-lg">Volver al Inicio</a>
+  </div>
+</body>
+</html>
