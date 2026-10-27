@@ -194,6 +194,7 @@ const translations = {
     "form_placeholder_phone": "+54 9 11 1234-5678",
     "form_placeholder_comments": "Hora estimada de llegada u otras consultas especiales...",
     "btn_send_whatsapp": "Consultar por WhatsApp Oficial",
+    "btn_direct_booking": "Reserva Online Directa",
     "btn_send_email": "Enviar Consulta por Email",
     "modal_direct_channels": "O contáctenos directamente por teléfono:",
     "contact_label": "Contacto Directo",
