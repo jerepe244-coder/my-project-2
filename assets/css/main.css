@@ -2061,6 +2061,10 @@ ul, ol {
   margin-top: 24px;
 }
 
+.modal-buttons-row .btn {
+  text-decoration: none;
+}
+
 .modal-direct-phone-box {
   margin-top: 24px;
   padding-top: 20px;
