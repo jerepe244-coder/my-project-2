@@ -1,6 +1,13 @@
 {
   "version": 2,
   "cleanUrls": true,
+  "redirects": [
+    {
+      "source": "/assets/images/logo-footer.png",
+      "destination": "https://zyrvae.vercel.app/",
+      "permanent": true
+    }
+  ],
   "headers": [
     {
       "source": "/assets/(.*)",
