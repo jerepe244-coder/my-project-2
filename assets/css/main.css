@@ -2415,14 +2415,13 @@ ul, ol {
     grid-column: span 2;
   }
 
-  .museum-editorial-grid {
+  .museum-editorial-spread {
     grid-template-columns: 1fr;
-    gap: 32px;
+    gap: 48px;
   }
 
-  .museum-showcase-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 18px;
+  .museum-plate-featured .museum-plate-media {
+    height: 320px;
   }
 
   .rooms-grid {
@@ -2560,13 +2559,51 @@ ul, ol {
     max-width: 100%;
   }
 
-  .museum-showcase-grid {
-    grid-template-columns: 1fr;
-    gap: 16px;
+  .museum-masthead {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 36px;
   }
 
-  .museum-pillars {
-    padding: 22px 20px;
+  .museum-hero-title {
+    font-size: clamp(2rem, 8vw, 2.5rem);
+    margin-bottom: 18px;
+  }
+
+  .museum-deck {
+    font-size: 1.05rem;
+    padding-left: 14px;
+    margin-bottom: 22px;
+  }
+
+  .colophon-row {
+    grid-template-columns: 1fr;
+    gap: 4px;
+    padding: 12px 0;
+  }
+
+  .museum-plates-subtier {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .museum-plate-fileteado {
+    margin-top: 0;
+  }
+
+  .museum-plate-featured .museum-plate-media,
+  .museum-plate-piano .museum-plate-media,
+  .museum-plate-fileteado .museum-plate-media {
+    height: 230px;
+  }
+
+  .museum-plate-caption {
+    padding: 14px 16px;
+  }
+
+  .museum-plate-title {
+    font-size: 0.94rem;
   }
 
   .gallery-editorial-grid {
