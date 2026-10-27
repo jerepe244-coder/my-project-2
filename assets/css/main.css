@@ -1079,10 +1079,12 @@ ul, ol {
   transition: transform var(--transition-smooth), border-color var(--transition-smooth), box-shadow var(--transition-smooth);
 }
 
-.museum-plate:hover {
+.museum-plate:hover,
+.museum-plate:focus-visible {
   transform: translateY(-4px);
   border-color: var(--color-gold);
   box-shadow: 0 18px 44px rgba(0, 0, 0, 0.6);
+  outline: none;
 }
 
 .museum-plate-media {
