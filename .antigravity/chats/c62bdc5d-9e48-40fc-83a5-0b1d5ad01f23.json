@@ -448,6 +448,18 @@
       "created_at": "2026-10-27T03:49:50.543Z",
       "sender": "macOS",
       "is_cancelled": false
+    },
+    {
+      "id": "e00492e4-af0b-4e27-90ee-98ecfa70e974",
+      "role": "user",
+      "content": "Hotel La Fresque — Rediseño del museo y corrección de habitación\n\nRediseñá por completo la estética de la sección del museo y corregí la información de la habitación Ejecutiva.\n\n1. Sección del museo\n\nCreá una sección sofisticada, memorable y coherente con la arquitectura histórica del hotel. Usá una composición editorial asimétrica, jerarquía visual clara, espacios generosos, título protagonista e imágenes auténticas del museo. Aplicá la identidad visual del hotel: marfil, bordó, dorado envejecido y tonos oscuros cálidos. Incorporá detalles sutiles inspirados en archivos históricos y publicaciones culturales. Evitá emojis, adornos innecesarios, tarjetas repetitivas, textos extensos y recursos genéricos.\n\nMantené únicamente información histórica verificable. No inventes fechas, objetos, procedencias ni anécdotas, y nunca uses imágenes de otros museos como si fueran de La Fresque.\n\n2. Habitación Ejecutiva\n\nLa habitación Ejecutiva dispone únicamente de cama matrimonial. Eliminá todas las referencias a camas twin, individuales o alternativas para esta habitación. Corregí la información en español, inglés y portugués brasileño, revisando descripciones, detalles y selectores relacionados. No modifiques las opciones de cama de las demás habitaciones.\n\n3. Implementación y verificación\n\nAdaptá el diseño del museo a escritorio y móvil, cuidando proporciones, recortes, espaciado y legibilidad. Conservá el funcionamiento del sitio y las traducciones a los tres idiomas. No modifiques otras secciones ni contenidos ajenos a estas tareas.\n\nVerificá ambas modificaciones en todos los idiomas y tamaños de pantalla. Cuando todo esté correcto, publicá automáticamente los cambios en Vercel y confirmá que el despliegue haya finalizado correctamente y que producción muestre los cambios.",
+      "status": "pending",
+      "model": "gemini-3.8-flash-medium",
+      "client_type": "gemini-bridge",
+      "parent_message_id": null,
+      "created_at": "2026-10-27T03:55:39.426Z",
+      "sender": "ios",
+      "is_cancelled": false
     }
   ]
 }
