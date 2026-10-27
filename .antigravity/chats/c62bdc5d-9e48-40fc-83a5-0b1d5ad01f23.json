@@ -496,6 +496,18 @@
       "created_at": "2026-10-27T15:33:29.443Z",
       "sender": "macOS",
       "is_cancelled": false
+    },
+    {
+      "id": "31e47ef5-fa0d-42a0-9cf4-c70be4bf4f2f",
+      "role": "user",
+      "content": "Hay un problema pendiente con el footer del Hotel La Fresque. La imagen https://hotel-la-fresque.vercel.app/assets/images/logo-footer.png sigue accesible.\n\nRevisá el HTML, CSS y los assets del footer para identificar si esa imagen sigue siendo utilizada por la página publicada. Queremos reemplazar el crédito de Foco Creativo por el logo auténtico de ZYRVAE y el texto “Desarrollado por ZYRVAE”, enlazados a https://zyrvae.vercel.app/.\n\nNo te limites a cambiar el texto: verificá el elemento visual que se renderiza y sus referencias en el código. No modifiques otras secciones. Cuando termines, indicá qué archivo o referencia estaba causando el problema y comprobá el resultado en la versión publicada.",
+      "status": "pending",
+      "model": "gemini-3.8-flash-medium",
+      "client_type": "gemini-bridge",
+      "parent_message_id": null,
+      "created_at": "2026-10-27T15:41:56.224Z",
+      "sender": "ios",
+      "is_cancelled": false
     }
   ]
 }
