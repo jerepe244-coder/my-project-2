@@ -645,9 +645,20 @@ function setupGallery() {
   }
 
   items.forEach((item) => {
+    if (!item.hasAttribute("tabindex")) {
+      item.setAttribute("tabindex", "0");
+      item.setAttribute("role", "button");
+    }
     item.addEventListener("click", () => {
       const idx = visibleItems.indexOf(item);
       if (idx !== -1) showLightbox(idx);
+    });
+    item.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        const idx = visibleItems.indexOf(item);
+        if (idx !== -1) showLightbox(idx);
+      }
     });
   });
 

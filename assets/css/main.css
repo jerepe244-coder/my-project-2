@@ -1173,7 +1173,8 @@ ul, ol {
   transition: all var(--transition-fast);
 }
 
-.museum-plate:hover .museum-plate-zoom {
+.museum-plate:hover .museum-plate-zoom,
+.museum-plate:focus-visible .museum-plate-zoom {
   background: var(--color-burgundy);
   border-color: var(--color-gold);
   color: var(--color-text-inverse);
