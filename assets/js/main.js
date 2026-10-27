@@ -250,11 +250,43 @@ function setupBookingSystem() {
   const sendWhatsAppBtn = document.getElementById("modalSendWhatsApp");
   const sendEmailBtn = document.getElementById("modalSendEmail");
 
+  const enforceExecutiveCapacity = (roomSelect, guestsSelect) => {
+    if (!roomSelect || !guestsSelect) return;
+    const isExecutive = roomSelect.value === "Ejecutiva";
+    Array.from(guestsSelect.options).forEach((opt) => {
+      const count = parseInt(opt.value, 10);
+      if (isExecutive && count > 2) {
+        opt.disabled = true;
+      } else {
+        opt.disabled = false;
+      }
+    });
+    if (isExecutive && parseInt(guestsSelect.value, 10) > 2) {
+      guestsSelect.value = "2";
+    }
+  };
+
+  const barRoomEl = document.getElementById("barRoomType");
+  const barGuestsEl = document.getElementById("barGuests");
+  if (barRoomEl && barGuestsEl) {
+    barRoomEl.addEventListener("change", () => enforceExecutiveCapacity(barRoomEl, barGuestsEl));
+    enforceExecutiveCapacity(barRoomEl, barGuestsEl);
+  }
+
+  const modalRoomEl = document.getElementById("modalRoomType");
+  const modalGuestsEl = document.getElementById("modalGuests");
+  if (modalRoomEl && modalGuestsEl) {
+    modalRoomEl.addEventListener("change", () => enforceExecutiveCapacity(modalRoomEl, modalGuestsEl));
+  }
+
   function openBookingModal(initialRoom = "") {
     if (!modal) return;
     if (initialRoom) {
       const modalRoomSelect = document.getElementById("modalRoomType");
-      if (modalRoomSelect) modalRoomSelect.value = initialRoom;
+      if (modalRoomSelect) {
+        modalRoomSelect.value = initialRoom;
+        enforceExecutiveCapacity(modalRoomSelect, document.getElementById("modalGuests"));
+      }
     }
     modal.classList.add("open");
     document.body.style.overflow = "hidden";
