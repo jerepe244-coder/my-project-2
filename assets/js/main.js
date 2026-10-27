@@ -248,7 +248,7 @@ function setupBookingSystem() {
   const openModalBtns = document.querySelectorAll("[data-open-booking]");
   const bookingBarForm = document.getElementById("quickBookingForm");
   const sendWhatsAppBtn = document.getElementById("modalSendWhatsApp");
-  const sendEmailBtn = document.getElementById("modalSendEmail");
+  const directBookingBtn = document.getElementById("modalDirectBooking");
 
   const enforceExecutiveCapacity = (roomSelect, guestsSelect) => {
     if (!roomSelect || !guestsSelect) return;
@@ -421,63 +421,12 @@ function setupBookingSystem() {
     });
   }
 
-  // Email Dispatch
-  if (sendEmailBtn) {
-    sendEmailBtn.addEventListener("click", (e) => {
-      e.preventDefault();
-      const data = getBookingData();
-      if (!validateBooking(data)) return;
-
-      const lang = window.currentAppLang || "es";
-      const t = translations[lang] || translations.es;
-      let subject = "";
-      let body = "";
-
-      if (lang === "pt") {
-        subject = `Consulta de Reserva: ${data.name} (${data.checkin} a ${data.checkout})`;
-        body = `Prezada equipe do Hotel La Fresque,\n\n` +
-          `Gostaria de consultar disponibilidade para a seguinte estadia:\n\n` +
-          `Nome do hóspede: ${data.name}\n` +
-          `Data de Check-in: ${data.checkin}\n` +
-          `Data de Check-out: ${data.checkout}\n` +
-          `Quantidade de Hóspedes: ${data.guests}\n` +
-          `Categoria solicitada: ${data.room}\n` +
-          `Telefone de contato: ${data.phone}\n` +
-          `E-mail: ${data.email}\n` +
-          (data.comments ? `Solicitações ou comentários: ${data.comments}\n` : "") +
-          `\nAgradeço se puderem me informar tarifas e disponibilidade.\n\nAtenciosamente,\n${data.name}`;
-      } else if (lang === "en") {
-        subject = `Reservation Inquiry: ${data.name} (${data.checkin} to ${data.checkout})`;
-        body = `Dear Hotel La Fresque Team,\n\n` +
-          `I would like to inquire about availability for the following stay:\n\n` +
-          `Guest Name: ${data.name}\n` +
-          `Check-in Date: ${data.checkin}\n` +
-          `Check-out Date: ${data.checkout}\n` +
-          `Guests: ${data.guests}\n` +
-          `Requested Room: ${data.room}\n` +
-          `Contact Phone: ${data.phone}\n` +
-          `Email: ${data.email}\n` +
-          (data.comments ? `Special Requests: ${data.comments}\n` : "") +
-          `\nPlease confirm rates and availability.\n\nBest regards,\n${data.name}`;
-      } else {
-        subject = `Consulta de Reserva: ${data.name} (${data.checkin} al ${data.checkout})`;
-        body = `Estimado equipo de Hotel La Fresque,\n\n` +
-          `Deseo consultar disponibilidad para la siguiente estadía:\n\n` +
-          `Nombre del pasajero: ${data.name}\n` +
-          `Fecha de Check-in: ${data.checkin}\n` +
-          `Fecha de Check-out: ${data.checkout}\n` +
-          `Cantidad de Huéspedes: ${data.guests}\n` +
-          `Categoría solicitada: ${data.room}\n` +
-          `Teléfono de contacto: ${data.phone}\n` +
-          `Correo electrónico: ${data.email}\n` +
-          (data.comments ? `Requerimientos o comentarios: ${data.comments}\n` : "") +
-          `\nAgradezco me informen tarifas y disponibilidad.\n\nAtentamente,\n${data.name}`;
-      }
-
-      const mailtoUrl = `mailto:info@lafresquehotel.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-      window.location.href = mailtoUrl;
-      closeBookingModal();
-      showToast(t.toast_email_open, "success");
+  // Direct Online Booking Link Handling
+  if (directBookingBtn) {
+    directBookingBtn.addEventListener("click", () => {
+      setTimeout(() => {
+        closeBookingModal();
+      }, 300);
     });
   }
 }
