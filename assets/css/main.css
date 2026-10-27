@@ -2483,6 +2483,73 @@ ul, ol {
   gap: 16px;
 }
 
+.footer-developer-credit {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-developer-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: rgba(250, 247, 242, 0.65);
+  text-decoration: none;
+  font-size: 0.82rem;
+  transition: all var(--transition-smooth);
+  padding: 4px 8px;
+  border-radius: var(--radius-sm);
+}
+
+.footer-developer-link:hover {
+  color: #FFFFFF;
+}
+
+.footer-developer-label {
+  font-family: var(--font-sans);
+  color: rgba(250, 247, 242, 0.65);
+  transition: color var(--transition-smooth);
+}
+
+.footer-developer-link:hover .footer-developer-label {
+  color: rgba(250, 247, 242, 0.9);
+}
+
+.footer-zyrvae-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 3px 9px 3px 6px;
+  border-radius: 6px;
+  transition: all var(--transition-smooth);
+}
+
+.footer-developer-link:hover .footer-zyrvae-brand {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(184, 141, 61, 0.45);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+.footer-zyrvae-logo {
+  width: 17px;
+  height: 17px;
+  display: block;
+  flex-shrink: 0;
+  border-radius: 4px;
+}
+
+.footer-zyrvae-text {
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: 0.76rem;
+  letter-spacing: 0.22em;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
 /* Toast Notifications */
 .toast-container {
   position: fixed;
