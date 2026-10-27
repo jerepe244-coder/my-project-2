@@ -472,6 +472,18 @@
       "created_at": "2026-10-27T03:56:15.175Z",
       "sender": "macOS",
       "is_cancelled": false
+    },
+    {
+      "id": "2a70c6a7-cb3d-4acd-af30-d30ddbfba0fa",
+      "role": "user",
+      "content": "Ajustes puntuales — Hotel La Fresque\n\nRealizá únicamente los siguientes cambios sobre la web actual. No rehagas el diseño ni modifiques otras secciones o funcionalidades.\n\n1. Crédito de desarrollo en el footer\n\n* Eliminá la mención y el enlace actuales de Foco Creativo.\n* Reemplazalos por el logo de ZYRVAE y el texto “Desarrollado por ZYRVAE”.\n* El logo y/o el texto deben enlazar a https://zyrvae.vercel.app/\n* Usá el logo y la identidad visual auténticos de ZYRVAE. No inventes un logotipo ni reemplaces la marca por texto genérico.\n* Mantené el crédito discreto, elegante y coherente con la estética del Hotel La Fresque, tanto en desktop como en mobile.\n\n2. Opciones de reserva\n\n* Eliminá el contacto por Gmail de la sección de reservas.\n* Conservá el contacto por WhatsApp tal como funciona actualmente.\n* Agregá una opción de reserva directa que enlace a:\n    https://booking.venicepms.com/lfr005/resonline/1/es/\n* Integrala visualmente con las opciones existentes y asegurate de que el enlace funcione correctamente en desktop y mobile.\n\nRestricciones\n\n* No modifiques textos, imágenes, estilos ni funcionalidades ajenas a estos dos pedidos.\n* No elimines ni alteres el enlace de WhatsApp.\n* No inventes datos de contacto.\n* Al terminar, verificá los cambios y reportá los archivos modificados y el resultado de las comprobaciones.",
+      "status": "pending",
+      "model": "gemini-3.8-flash-medium",
+      "client_type": "gemini-bridge",
+      "parent_message_id": null,
+      "created_at": "2026-10-27T15:23:18.075Z",
+      "sender": "ios",
+      "is_cancelled": false
     }
   ]
 }
