@@ -388,6 +388,18 @@
       "created_at": "2026-10-27T00:51:14.080Z",
       "sender": "macOS",
       "is_cancelled": false
+    },
+    {
+      "id": "9e6a8221-35fc-496e-b36b-19c92ade02be",
+      "role": "user",
+      "content": "Hotel La Fresque — Accesos legales\n\nAgregá al footer, en la parte inferior de la web, una sección discreta titulada “Legales” que incluya estos dos accesos:\n\n1. Data Fiscal — Formulario 960/D\nUsá el banner oficial proporcionado por la dueña, respetando su imagen y enlace fiscal. Código:\n\n2. Libro de quejas\nEnlace al formulario oficial utilizado por el hotel: https://form.jotform.com/230295556126053. Abrilo en una pestaña nueva.\n\nImplementación: mantené ambos accesos diferenciados, visibles y funcionales, integrados a la estética actual sin competir con el diseño. Adaptá los textos al español, inglés y portugués brasileño según el idioma seleccionado. Conservá el resto del sitio y todas sus funcionalidades. No crees formularios nuevos ni modifiques los originales.\n\nVerificación y publicación: comprobá que el banner cargue, que el enlace fiscal y el formulario funcionen y que ambos accesos se vean correctamente en escritorio y móvil. Si el recurso fiscal HTTP presenta problemas, verificá si existe una alternativa HTTPS oficial sin alterar el destino fiscal. Cuando todo funcione, publicá automáticamente los cambios en Vercel y confirmá que el despliegue finalizó correctamente y que producción muestra los cambios.",
+      "status": "pending",
+      "model": "gemini-3.8-flash-medium",
+      "client_type": "gemini-bridge",
+      "parent_message_id": null,
+      "created_at": "2026-10-27T01:27:09.210Z",
+      "sender": "ios",
+      "is_cancelled": false
     }
   ]
 }
