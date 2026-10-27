@@ -417,11 +417,23 @@
       "id": "05417abb-a7fc-49c2-a3f4-10c4c00222a1",
       "role": "user",
       "content": "Restaurá la versión mejorada de la sección Museo de La Fresque que habías implementado anteriormente y que después se revirtió. Recuperá el diseño editorial sofisticado, la composición asimétrica, la jerarquía visual, los espacios y las imágenes auténticas del museo de aquella versión.\n\nMantené intactas todas las demás secciones y funcionalidades. Conservá las traducciones ES/EN/PT-BR y asegurate de que el museo funcione correctamente en desktop y mobile. No inventes contenido histórico ni uses imágenes de otros museos.\n\nAl terminar, verificá los cambios y publicá automáticamente la versión corregida en Vercel.",
-      "status": "pending",
+      "status": "cancelled",
       "model": "gemini-3.8-flash-medium",
       "client_type": "gemini-bridge",
       "parent_message_id": null,
       "created_at": "2026-10-27T03:43:52.142Z",
+      "sender": "ios",
+      "is_cancelled": true
+    },
+    {
+      "id": "49b5feb4-5d4b-4e7a-8ddb-4a946a8759ad",
+      "role": "user",
+      "content": "Restaurá la versión mejorada de la sección Museo de La Fresque que habías implementado anteriormente y que después se revirtió. Recuperá el diseño editorial sofisticado, la composición asimétrica, la jerarquía visual, los espacios y las imágenes auténticas del museo de aquella versión.\n\nMantené intactas todas las demás secciones y funcionalidades. Conservá las traducciones ES/EN/PT-BR y asegurate de que el museo funcione correctamente en desktop y mobile. No inventes contenido histórico ni uses imágenes de otros museos.\n\nAl terminar, verificá los cambios y publicá automáticamente la versión corregida en Vercel.",
+      "status": "pending",
+      "model": "gemini-3.8-flash-medium",
+      "client_type": "gemini-bridge",
+      "parent_message_id": null,
+      "created_at": "2026-10-27T03:44:35.631Z",
       "sender": "ios",
       "is_cancelled": false
     }
